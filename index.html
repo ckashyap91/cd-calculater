@@ -52,11 +52,11 @@
                               </div>
                               <div class="row">
                                 <div class="col-md-12"> 
-                                <label>CD</label> 
+                                <label>CD::</label> 
                                 <label id="calculatedCDValue"></label> 
                                 </div>
                                 <div class="col-md-12"> 
-                                  <label>Firka</label> 
+                                  <label>Firka::</label> 
                                   <label id="calculatedFirkaValue"></label> 
                                 </div>
                               </div>
@@ -95,10 +95,10 @@
             }
             var value4 = Math.floor(value2 / type);
             var value5 = Math.floor(value3 / type);
-            var value6 = Math.floor(value2 % type);
-            var value7 = Math.floor(value3 % type);
-            $("#calculatedCDValue").html("Total " + value4 + "," + value6);
-            $("#calculatedFirkaValue").html("Total " + value5 + "," + value7);
+            var value6 = Math.round(value2 % type);
+            var value7 = Math.round(value3 % type);
+            $("#calculatedCDValue").html("Total " + value4 + " and " + value6 + "nang");
+            $("#calculatedFirkaValue").html("Total " + value5 + " and" + value7 + "nang");
       }
     </script>
   </body>
