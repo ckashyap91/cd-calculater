@@ -36,21 +36,21 @@
                                   <div class="form-group"> 
                                     <label for="cdValue">CD</label> 
                                       <input id="cdValue" type="text" name="cdValue" class="form-control" 
-                                        placeholder="Value" > 
+                                        placeholder="CD" > 
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="form-group"> 
                                     <label for="mtrValue">MTR</label> 
                                       <input id="mtrValue" type="text" name="mtrValue" class="form-control" 
-                                        placeholder="Value" > 
+                                        placeholder="MTR" > 
                                   </div>
                               </div>
                               </div>
                               <div class="row">
                                   <div class="col-md-12"> <input type="button" onclick="calculateValue()" class="btn btn-success btn-send pt-2 btn-block " value="Calculate" ></div>
                               </div>
-                              <div class="row">
+                              <div class="row" style="font-size: 30px;">
                                 <div class="col-md-12"> 
                                 <label>CD::</label> 
                                 <label id="calculatedCDValue"></label> 
@@ -97,8 +97,8 @@
             var value5 = Math.floor(value3 / type);
             var value6 = Math.round(value2 % type);
             var value7 = Math.round(value3 % type);
-            $("#calculatedCDValue").html("Total " + Math.floor(value2) + ":" + value4 + " round and " + value6 + " cd");
-            $("#calculatedFirkaValue").html("Total "+ Math.floor(value3) + ":" + value5 + " round and" + value7 + " firka");
+            $("#calculatedCDValue").html("Total " + Math.floor(value2) + " : " + value4 + " round and " + value6 + " cd");
+            $("#calculatedFirkaValue").html("Total "+ Math.floor(value3) + " : " + value5 + " round and" + value7 + " firka");
       }
     </script>
   </body>
