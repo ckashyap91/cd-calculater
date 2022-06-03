@@ -28,6 +28,7 @@
                                       <select id="selectType" name="selectType" class="form-control">
                                               <option value="1" selected>3 mm</option>
                                               <option value="2">5 mm</option>
+                                              <option value="3">7 mm</option>
                                           </select> </div>
                                   </div>
                               </div>
@@ -92,6 +93,11 @@
                 type = 30; 
                 value2 = parseFloat(value1 / 18200);
                 value3 = parseFloat(value1 / 91650);
+            }
+            if(selectedValue == "3"){
+                type = 20; 
+                value2 = parseFloat(value1 / 54990);
+                value3 = parseFloat(value1 / 11115);
             }
             var value4 = Math.floor(value2 / type);
             var value5 = Math.floor(value3 / type);
